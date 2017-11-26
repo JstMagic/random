@@ -1,0 +1,24 @@
+﻿<html>
+  <head>
+  </head>
+  <body>
+    
+    <div id="container">
+      <input type="text" id="container" placeholder="enter text" v-model="value">
+     Enter Something here please <p>{{ value }}</p>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/0.11.10/vue.min.js"></script>
+    <script>
+      
+      new Vue({
+        el: '#container',
+        data: {
+          value: '',
+        },
+      });
+      
+    </script>
+    
+  </body>
+</html>
